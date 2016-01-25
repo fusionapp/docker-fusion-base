@@ -1,0 +1,3 @@
+pip==7.1.2 # Pinned below 8.0.0 until https://github.com/pypa/pip/issues/3414 is resolved
+setuptools==19.6
+wheel==0.26.0
