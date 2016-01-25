@@ -8,4 +8,4 @@ CMD [ \
  "--wheel-dir", "/wheelhouse", \
  "--find-links", "/wheelhouse", \
  "--no-cache-dir", \
- "--requirement", "/application/requirements.txt"]
+ "--requirement", "/application/requirements.txt", "/application"]
