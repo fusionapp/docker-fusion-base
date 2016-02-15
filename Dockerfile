@@ -5,7 +5,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-instal
 RUN echo 'en_ZA.UTF-8 UTF-8\nen_US.UTF-8 UTF-8\nen_GB.UTF-8 UTF-8' > /etc/locale.gen && locale-gen
 RUN ["virtualenv", "-p", "/usr/bin/python", "/appenv"]
 COPY ["requirements.txt", "/appenv/requirements.txt"]
-RUN . /appenv/bin/activate && pip install --no-cache-dir --requirement /appenv/requirements.txt
+RUN . /appenv/bin/activate && pip install --requirement /appenv/requirements.txt
 WORKDIR /application
 CMD [ \
  "/appenv/bin/pip", "wheel", \
