@@ -1,4 +1,4 @@
-FROM pypy:2-5.8.0-slim
+FROM pypy:2-5.9.0-slim
 # See https://github.com/debuerreotype/debuerreotype/issues/10
 RUN mkdir -p /usr/share/man/man1
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -qy gcc libc6-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libsqlite3-dev ca-certificates libjpeg-dev zlib1g-dev git jarwrapper openjdk-7-jre-headless curl locales pdftk
